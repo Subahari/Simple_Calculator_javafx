@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #52b1d3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="image" cache="true" fitHeight="400.0" fitWidth="623.0" layoutX="-2.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(4).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Text1" layoutX="153.0" layoutY="98.0" prefHeight="28.0" prefWidth="419.0" promptText="Enter Number1:" style="-fx-background-color: #5291d1;">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="Text2" layoutX="153.0" layoutY="140.0" prefHeight="28.0" prefWidth="419.0" promptText="Enter Number2:" style="-fx-background-color: #5291d1;">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <Button fx:id="addition" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="CENTER" layoutX="153.0" layoutY="211.0" mnemonicParsing="false" onAction="#addition" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="addition" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="subtraction" layoutX="153.0" layoutY="256.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="subtraction" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.9210526347160339" green="0.9210526347160339" blue="0.9210526347160339" />
+                     </color>
+                  </Light.Distant>
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="multiplication" layoutX="153.0" layoutY="296.0" mnemonicParsing="false" onAction="#multiplication" style="-fx-background-color: #5291d1;" text="multiplication" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="division" layoutX="153.0" layoutY="337.0" mnemonicParsing="false" onAction="#division" prefHeight="22.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="division" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="sin" layoutX="460.0" layoutY="211.0" mnemonicParsing="false" onAction="#Actionsin" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="sin" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="cosin" layoutX="460.0" layoutY="256.0" mnemonicParsing="false" onAction="#Actioncosin" prefHeight="22.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="cosin" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="tan" layoutX="460.0" layoutY="296.0" mnemonicParsing="false" onAction="#Actiontan" prefHeight="22.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="tan" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Light.Distant>
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="exponential" layoutX="461.0" layoutY="337.0" mnemonicParsing="false" onAction="#Actionexponential" prefHeight="22.0" prefWidth="111.0" style="-fx-background-color: #5291d1;" text="exponential" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="label" layoutX="152.0" layoutY="175.0" prefHeight="28.0" prefWidth="419.0" style="-fx-background-color: #5291d1;" visible="false">
+         <font>
+            <Font name="Verdana Bold" size="14.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label layoutX="153.0" layoutY="35.0" prefHeight="43.0" prefWidth="419.0" text="Calculator Using JavaFX">
+         <font>
+            <Font name="Candara Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
